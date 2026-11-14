@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#8e252b">
+  <meta name="description" content="A little birthday surprise for Sachin.">
+  <title>A little surprise for Sachin ♥</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/password.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/password.js" defer></script>
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <div class="floating-decor decor-heart decor-heart-one" aria-hidden="true">♥</div>
+  <div class="floating-decor decor-heart decor-heart-two" aria-hidden="true">♡</div>
+  <div class="floating-decor decor-star decor-star-one" aria-hidden="true">✦</div>
+  <div class="floating-decor decor-star decor-star-two" aria-hidden="true">✧</div>
+
+  <main class="entry-screen">
+    <section class="invite-card" aria-labelledby="page-title">
+      <div class="top-stamp" aria-hidden="true">
+        <span>MADE WITH</span>
+        <strong>♥</strong>
+        <span>FOR YOU</span>
+      </div>
+
+      <p class="eyebrow">A LITTLE BIRTHDAY SURPRISE</p>
+      <h1 id="page-title">Hey, Sachin<span class="title-heart">♥</span></h1>
+      <p class="intro-copy">Someone has prepared a little something for you.<br>But first, a tiny secret...</p>
+
+      <div class="envelope-art" aria-hidden="true">
+        <div class="envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-letter">for you <span>♥</span></div>
+          <div class="envelope-front"></div>
+          <div class="seal">♥</div>
+        </div>
+        <span class="sparkle sparkle-left">✧</span>
+        <span class="sparkle sparkle-right">✦</span>
+      </div>
+
+      <form id="passcode-form" class="passcode-form" novalidate>
+        <label for="passcode">ENTER YOUR SECRET PASSCODE</label>
+        <div class="passcode-wrap">
+          <input
+            id="passcode"
+            name="passcode"
+            type="password"
+            inputmode="numeric"
+            autocomplete="off"
+            maxlength="4"
+            pattern="[0-9]{4}"
+            placeholder="••••"
+            aria-describedby="passcode-message"
+            required
+          >
+        </div>
+        <p id="passcode-message" class="feedback" role="status" aria-live="polite">A little birthday magic is waiting inside.</p>
+        <button class="primary-button" type="submit">
+          Unlock your surprise <span aria-hidden="true">→</span>
+        </button>
+      </form>
+
+      <p class="card-footer">A small page made with a whole lot of love <span>♥</span></p>
+    </section>
+
+    <p class="outside-note">Psst... this little surprise is just for you.</p>
+  </main>
+</body>
+</html>
