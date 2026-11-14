@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+<defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.5" fill="#b34e53" opacity=".16"/></pattern></defs>
+<rect width="600" height="600" fill="#f7e9dc"/><rect width="600" height="600" fill="url(#dots)"/>
+<circle cx="300" cy="250" r="108" fill="#fff8ef" opacity=".62"/>
+<path d="M300 330 C235 282 184 246 211 198 C234 156 286 174 300 211 C314 174 366 156 389 198 C416 246 365 282 300 330Z" fill="#b34e53" opacity=".82"/>
+<text x="300" y="430" text-anchor="middle" fill="#b34e53" font-family="Georgia,serif" font-size="35">PHOTO 06</text>
+<text x="300" y="474" text-anchor="middle" fill="#76534e" font-family="Arial,sans-serif" font-size="19" letter-spacing="4">ADD YOUR MEMORY</text>
+</svg>

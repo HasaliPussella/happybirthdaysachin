@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#8e252b">
+  <meta name="description" content="A birthday room full of little surprises for Sachin.">
+  <title>Happy Birthday, Sachin! ♥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/birthday.css">
+  <link rel="stylesheet" href="../css/cake.css">
+  <script src="../js/config.js" defer></script>
+  <script src="../js/gifts.js" defer></script>
+  <script src="../js/music.js" defer></script>
+</head>
+<body class="birthday-page">
+  <div class="paper-grain" aria-hidden="true"></div>
+  <div class="floating-decor decor-heart decor-heart-one" aria-hidden="true">♥</div>
+  <div class="floating-decor decor-heart decor-heart-two" aria-hidden="true">♡</div>
+  <div class="floating-decor decor-star decor-star-one" aria-hidden="true">✦</div>
+  <div class="floating-decor decor-star decor-star-two" aria-hidden="true">✧</div>
+
+  <header class="room-header">
+    <a class="brand-mark" href="../index.html" aria-label="Back to entrance">a little surprise <span>♥</span></a>
+    <div class="header-note">A DAY MADE JUST FOR YOU</div>
+    <button class="music-toggle" type="button" data-music-toggle aria-pressed="false">♫ Play music</button>
+  </header>
+
+  <main class="birthday-main">
+    <section class="welcome-panel">
+      <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+      <h1>Happy Birthday,<br><span id="friend-name">Sachin</span><span class="title-heart">♥</span></h1>
+      <p class="welcome-copy">I hope your day is filled with laughter, good memories<br class="desktop-break"> and all the little things that make you happy.</p>
+      <div class="handwritten-note">Your little birthday corner ✿</div>
+      <div class="scroll-hint" aria-hidden="true"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="gifts-section" aria-labelledby="gifts-heading">
+      <div class="section-heading">
+        <p class="eyebrow">A FEW LITTLE THINGS FOR YOU</p>
+        <h2 id="gifts-heading">Pick a present!</h2>
+        <p>Three little gifts, each with something inside.</p>
+      </div>
+
+      <div class="gift-grid">
+        <button class="gift-card" type="button" data-gift="message" aria-haspopup="dialog">
+          <span class="gift-number">01</span>
+          <span class="gift-illustration gift-one" aria-hidden="true">
+            <span class="gift-box"><span class="gift-lid"></span><span class="gift-ribbon"></span><span class="gift-bow">♡</span></span>
+            <span class="gift-spark">✦</span>
+          </span>
+          <span class="gift-title">A little message</span>
+          <span class="gift-subtitle">Something from my heart</span>
+          <span class="gift-open">OPEN GIFT ↗</span>
+        </button>
+
+        <button class="gift-card" type="button" data-gift="memories" aria-haspopup="dialog">
+          <span class="gift-number">02</span>
+          <span class="gift-illustration gift-two" aria-hidden="true">
+            <span class="gift-box"><span class="gift-lid"></span><span class="gift-ribbon"></span><span class="gift-bow">✿</span></span>
+            <span class="gift-spark">♡</span>
+          </span>
+          <span class="gift-title">Memory box</span>
+          <span class="gift-subtitle">A tiny box of moments</span>
+          <span class="gift-open">OPEN GIFT ↗</span>
+        </button>
+
+        <button class="gift-card" type="button" data-gift="surprise" aria-haspopup="dialog">
+          <span class="gift-number">03</span>
+          <span class="gift-illustration gift-three" aria-hidden="true">
+            <span class="gift-box"><span class="gift-lid"></span><span class="gift-ribbon"></span><span class="gift-bow">★</span></span>
+            <span class="gift-spark">✧</span>
+          </span>
+          <span class="gift-title">One more thing...</span>
+          <span class="gift-subtitle">There's more waiting for you</span>
+          <span class="gift-open">OPEN GIFT ↗</span>
+        </button>
+      </div>
+
+      <p class="gift-progress" id="gift-progress" aria-live="polite">You've opened 0 of 3 gifts ♥</p>
+    </section>
+
+    <section class="next-teaser">
+      <span class="teaser-icon" aria-hidden="true">🎂</span>
+      <div>
+        <p class="eyebrow">THE SURPRISE ISN'T OVER</p>
+        <h2>Ready for your birthday wish?</h2>
+        <p>A little cake, a candle to blow out, and a wish made just for you are waiting in the next chapter.</p>
+      </div>
+      <a class="primary-button teaser-button" href="cake.html">Continue to the cake <span>→</span></a>
+    </section>
+  </main>
+
+  <footer class="room-footer">Made with a whole lot of love <span>♥</span></footer>
+
+  <div class="gift-modal" id="gift-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <button class="modal-close" type="button" aria-label="Close gift" data-close-modal>×</button>
+      <div class="modal-sticker" id="modal-sticker" aria-hidden="true">♥</div>
+      <p class="eyebrow" id="modal-eyebrow">A LITTLE GIFT FOR YOU</p>
+      <h2 id="modal-title">A little message</h2>
+      <p class="modal-copy" id="modal-copy"></p>
+      <p class="modal-hand" id="modal-hand">With love, always ♥</p>
+      <button class="primary-button modal-done" type="button" data-close-modal>That was cute ♥</button>
+    </div>
+  </div>
+</body>
+</html>
